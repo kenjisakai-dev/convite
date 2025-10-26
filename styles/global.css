@@ -44,5 +44,17 @@
 
   --body-md: 400 1rem / normal var(--font-family-open);
   --body-sm: 400 0.0625rem / normal var(--font-family-open);
-  --body-sm: 400 0.75rem / normal var(--font-family-open);
+  --body-xs: 400 0.75rem / normal var(--font-family-open);
+}
+
+body {
+  font: var(--body-md);
+  color: var(--text-heading);
+  overflow: hidden;
+}
+
+h1 {
+  font: var(--logo);
+  color: var(--pink);
+  margin-block: 1rem 0.25rem;
 }
