@@ -1,3 +1,10 @@
+label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font: var(--body-sm);
+  color: var(--text-body);
+}
+
 input,
 textarea {
   width: 100%;
@@ -9,6 +16,19 @@ textarea {
   font: var(--body-md);
   color: var(--input-placeholder);
   outline: none;
+
+  &:invalid {
+    border: 1px solid var(--danger);
+  }
+
+  &:focus,
+  &:focus-within {
+    border: 1px solid var(--brand-light);
+  }
+
+  &:valid + .error {
+    display: none;
+  }
 }
 
 textarea {
@@ -16,9 +36,14 @@ textarea {
   padding: 1rem;
 }
 
-label {
-  display: block;
-  margin-bottom: 0.75rem;
-  font: var(--body-sm);
-  color: var(--text-body);
+.error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+
+  small {
+    font: var(--body-xs);
+    color: var(--danger);
+  }
 }
