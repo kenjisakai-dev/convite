@@ -5,23 +5,20 @@
   padding: 1.25rem;
   height: 100vh;
   overflow: hidden;
-
   background-color: var(--shape-background);
 }
 
 aside {
-  background: blue;
-  border-radius: 0.75rem;
   background-image: url(../assets/Background.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   overflow: hidden;
+  border-radius: 0.75rem;
 
   header {
-    margin-top: 2rem;
-    margin-inline: 2rem;
+    margin: 2rem 2rem 0;
 
     img {
       width: 2.86rem;

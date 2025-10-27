@@ -43,7 +43,7 @@
   --heading-sm: 700 1.125rem / normal var(--font-family-baloo);
 
   --body-md: 400 1rem / normal var(--font-family-open);
-  --body-sm: 400 0.0625rem / normal var(--font-family-open);
+  --body-sm: 400 0.875rem / normal var(--font-family-open);
   --body-xs: 400 0.75rem / normal var(--font-family-open);
 }
 
@@ -57,4 +57,26 @@ h1 {
   font: var(--logo);
   color: var(--pink);
   margin-block: 1rem 0.25rem;
+}
+
+h2 {
+  font: var(--heading-md);
+  color: var(--text-heading);
+  margin-bottom: 2.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.gap-1 {
+  gap: 1rem;
 }
