@@ -16,19 +16,6 @@ aside {
 
   overflow: hidden;
   border-radius: 0.75rem;
-
-  header {
-    margin: 2rem 2rem 0;
-
-    img {
-      width: 2.86rem;
-      height: 3rem;
-    }
-
-    p {
-      font-weight: 300;
-    }
-  }
 }
 
 main {
