@@ -1,0 +1,57 @@
+.switch-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  label {
+    margin: 0;
+    cursor: pointer;
+
+    &::after {
+      content: "Escuro";
+    }
+  }
+}
+
+.switch-inner {
+  width: 4rem;
+  height: 2rem;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 999px;
+  cursor: pointer;
+  padding: 0.25rem;
+
+  position: relative;
+
+  input[type="checkbox"] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  input[type="checkbox"]:checked + .switch-handle {
+    background-color: var(--text-heading);
+    transform: translateX(2rem) translateY(-50%);
+  }
+
+  &:has(input:checked) {
+    background-color: var(--brand-light);
+
+    & + label::after {
+      content: "Claro";
+    }
+  }
+
+  .switch-handle {
+    background-color: var(--input-stroke);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    transform: translateX(0) translateY(-50%);
+  }
+}

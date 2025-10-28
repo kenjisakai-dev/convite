@@ -1,0 +1,46 @@
+.file-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+
+  label {
+    font: var(--body-md);
+    color: var(--input-placeholder);
+    margin: 0;
+  }
+}
+
+.button-upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.656rem 0.75rem;
+  background-color: var(--shape-button);
+  border-radius: 0.5rem;
+
+  position: relative;
+
+  & input[type="file"] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+
+    & ::-webkit-file-upload-button {
+      display: none;
+    }
+
+    &::file-selector-button {
+      display: none;
+    }
+  }
+
+  label {
+    font: var(--body-sm);
+    font-weight: 600;
+    color: var(--text-heading);
+  }
+}

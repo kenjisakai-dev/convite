@@ -168,9 +168,9 @@
               </legend>
 
               <div class="input-wrapper event-color">
-                <label>Cor principal</label>
+                <label for="radio-color">Cor principal</label>
 
-                <div class="radio-wrapper">
+                <div id="radio-color" class="radio-wrapper">
                   <div class="radio-inner">
                     <input type="radio" name="color" value="brand" />
                   </div>
@@ -218,9 +218,9 @@
               </div>
 
               <div class="input-wrapper event-theme">
-                <label>Tema do evento</label>
+                <label for="radio-theme">Tema do evento</label>
 
-                <div class="radio-wrapper">
+                <div id="radio-theme" class="radio-wrapper">
                   <div class="radio-inner">
                     <input
                       id="birthday"
@@ -385,10 +385,49 @@
                   </div>
                 </div>
               </div>
+
+              <div class="flex gap-1">
+                <div class="input-wrapper flex-1">
+                  <label for="switch-theme">Estilo</label>
+
+                  <div id="switch-theme" class="switch-wrapper">
+                    <div class="switch-inner">
+                      <input
+                        id="theme-style"
+                        type="checkbox"
+                        name="theme-style"
+                      />
+                      <div class="switch-handle"></div>
+                    </div>
+
+                    <label for="theme-style"></label>
+                  </div>
+                </div>
+
+                <div class="input-wrapper flex-2">
+                  <label for="upload-photo">Foto de capa</label>
+
+                  <div id="upload-photo" class="file-wrapper">
+                    <div class="button-upload">
+                      <input
+                        type="file"
+                        name="upload-photo"
+                        accept="image/png, image/jpeg"
+                      />
+                      <img src="assets/icons/upload.svg" alt="ícone upload" />
+                      <label>Selecionar</label>
+                    </div>
+
+                    <label>Nenhum arquivo selecionado</label>
+                  </div>
+                </div>
+              </div>
             </fieldset>
           </form>
         </div>
       </main>
     </div>
+
+    <script src="scripts/file.js"></script>
   </body>
 </html>
