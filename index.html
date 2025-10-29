@@ -419,6 +419,98 @@
                 </div>
               </div>
             </fieldset>
+
+            <fieldset id="contact">
+              <legend>
+                <img src="assets/icons/contact.svg" alt="ícone contato" />
+                Dados para contato
+              </legend>
+
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Nome completo"
+                  required
+                />
+                <div class="error">
+                  <img src="assets/icons/circle-alert.svg" alt="ícone alerta" />
+                  <small>Error message</small>
+                </div>
+              </div>
+
+              <div class="flex gap-1">
+                <div class="input-wrapper flex-1">
+                  <label for="email">E-mail</label>
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="exemplo@email.com"
+                  />
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="phone">Telefone</label>
+                  <input
+                    id="phone"
+                    type="tel"
+                    name="phone"
+                    placeholder="(99) 99999-9999"
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset id="terms">
+              <div class="term">
+                <input
+                  id="terms-conditions"
+                  type="checkbox"
+                  name="terms-conditions"
+                  value="checked"
+                  checked
+                />
+                <label for="terms-conditions">
+                  Li e concordo com os
+                  <strong>Termos e Condições</strong> e com a
+                  <strong>Política de Privacidade</strong>.
+                </label>
+              </div>
+
+              <div class="term">
+                <input
+                  id="receiving-email"
+                  type="checkbox"
+                  name="receiving-email"
+                  value="checked"
+                />
+                <label for="receiving-email">
+                  Aceito receber atualizações e promoções por e-mail
+                </label>
+              </div>
+
+              <div class="term">
+                <input
+                  id="receiving-message"
+                  type="checkbox"
+                  name="receiving-message"
+                  value="checked"
+                />
+                <label for="receiving-message">
+                  Aceito receber atualizações e promoções por SMS
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="button-submit">
+              <button type="submit">
+                <img src="assets/icons/ticket.svg" alt="ícone convite" />
+                <label>Gerar convite</label>
+              </button>
+            </div>
           </form>
         </div>
       </main>

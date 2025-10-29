@@ -5,7 +5,10 @@ label {
   color: var(--text-body);
 }
 
-input,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="datetime"],
 textarea {
   width: 100%;
   padding: 0.8125rem 1.25rem;
