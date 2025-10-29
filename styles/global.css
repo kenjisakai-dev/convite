@@ -47,10 +47,16 @@
   --body-xs: 400 0.75rem / normal var(--font-family-open);
 }
 
+.container {
+  max-width: 80rem;
+  margin: auto;
+}
+
 body {
   font: var(--body-md);
   color: var(--text-heading);
   overflow: hidden;
+  background-color: var(--shape-background);
 }
 
 h1 {
@@ -67,4 +73,20 @@ h2 {
 
 img {
   max-width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.gap-1 {
+  gap: 1rem;
 }
