@@ -13,8 +13,7 @@
     border-radius: 0.5rem;
     padding: 0.812rem 1.25rem;
 
-    & label {
-      margin: 0;
+    & span {
       font: var(--body-md);
       font-weight: 600;
       color: var(--text-heading);

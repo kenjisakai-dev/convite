@@ -2,12 +2,10 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  width: 100%;
 
-  label {
+  span {
     font: var(--body-md);
     color: var(--input-placeholder);
-    margin: 0;
   }
 }
 
@@ -38,7 +36,7 @@
     }
   }
 
-  label {
+  & span {
     font: var(--body-sm);
     font-weight: 600;
     color: var(--text-heading);

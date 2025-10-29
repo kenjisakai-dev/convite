@@ -3,8 +3,9 @@
   align-items: center;
   gap: 0.75rem;
 
-  label {
-    margin: 0;
+  span {
+    font: var(--body-sm);
+    color: var(--text-heading);
 
     &::after {
       content: "Escuro";
@@ -22,7 +23,7 @@
 
   position: relative;
 
-  input[type="checkbox"] {
+  & input[type="checkbox"] {
     all: unset;
     position: absolute;
     inset: 0;
@@ -31,20 +32,7 @@
     z-index: 1;
   }
 
-  input[type="checkbox"]:checked + .switch-handle {
-    background-color: var(--text-heading);
-    transform: translateX(2rem) translateY(-50%);
-  }
-
-  &:has(input:checked) {
-    background-color: var(--brand-light);
-
-    & + label::after {
-      content: "Claro";
-    }
-  }
-
-  .switch-handle {
+  & .switch-handle {
     background-color: var(--input-stroke);
     width: 1.5rem;
     height: 1.5rem;
@@ -53,5 +41,18 @@
     position: absolute;
     top: 50%;
     transform: translateX(0) translateY(-50%);
+  }
+
+  & input[type="checkbox"]:checked + .switch-handle {
+    background-color: var(--text-heading);
+    transform: translateX(2rem) translateY(-50%);
+  }
+
+  &:has(input:checked) {
+    background-color: var(--brand-light);
+
+    & + span::after {
+      content: "Claro";
+    }
   }
 }

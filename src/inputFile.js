@@ -1,5 +1,5 @@
 const inputFile = document.querySelector(".file-wrapper input[type='file']");
-const labelFile = document.querySelector(".file-wrapper > label");
+const labelFile = document.querySelector(".file-wrapper > span");
 
 inputFile.addEventListener("change", function () {
   if (inputFile.files.length === 1) {

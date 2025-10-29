@@ -29,7 +29,7 @@
         <div class="main-container">
           <h2>Crie seu convite</h2>
 
-          <form method="get" enctype="multipart/form-data">
+          <form method="post" enctype="multipart/form-data">
             <fieldset class="about">
               <legend>
                 <img src="assets/icons/calendar.svg" alt="ícone calendario" />
@@ -374,15 +374,15 @@
 
               <div class="flex gap-1">
                 <div class="input-wrapper flex-1">
-                  <label for="switch-theme">Estilo</label>
+                  <label for="theme-style">Estilo</label>
 
-                  <div id="switch-theme" class="switch-wrapper">
+                  <div id="theme-style" class="switch-wrapper">
                     <div class="switch-inner">
                       <input type="checkbox" name="theme-style" />
                       <div class="switch-handle"></div>
                     </div>
 
-                    <label></label>
+                    <span></span>
                   </div>
                 </div>
 
@@ -397,16 +397,16 @@
                         accept="image/png, image/jpeg"
                       />
                       <img src="assets/icons/upload.svg" alt="ícone upload" />
-                      <label>Selecionar</label>
+                      <span>Selecionar</span>
                     </div>
 
-                    <label>Nenhum arquivo selecionado</label>
+                    <span>Nenhum arquivo selecionado</span>
                   </div>
                 </div>
               </div>
             </fieldset>
 
-            <fieldset id="contact">
+            <fieldset class="contact">
               <legend>
                 <img src="assets/icons/contact.svg" alt="ícone contato" />
                 <span>Dados para contato</span>
@@ -421,6 +421,7 @@
                   placeholder="Nome completo"
                   required
                 />
+
                 <div class="error">
                   <img src="assets/icons/circle-alert.svg" alt="ícone alerta" />
                   <small>Error message</small>
@@ -450,7 +451,7 @@
               </div>
             </fieldset>
 
-            <fieldset id="terms">
+            <fieldset class="terms">
               <div class="term">
                 <input
                   id="terms-conditions"
@@ -459,6 +460,7 @@
                   value="checked"
                   checked
                 />
+
                 <label for="terms-conditions">
                   Li e concordo com os
                   <strong>Termos e Condições</strong> e com a
@@ -494,7 +496,7 @@
             <div class="button-submit">
               <button type="submit">
                 <img src="assets/icons/ticket.svg" alt="ícone convite" />
-                <label>Gerar convite</label>
+                <span>Gerar convite</span>
               </button>
             </div>
           </form>
@@ -502,6 +504,6 @@
       </main>
     </div>
 
-    <script src="scripts/file.js"></script>
+    <script src="src/inputFile.js"></script>
   </body>
 </html>
